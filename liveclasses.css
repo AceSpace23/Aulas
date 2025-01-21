@@ -19,6 +19,7 @@ body{
 #video-streams{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
     height: 90vh;
     width: 1400px;
     margin:0 auto; 

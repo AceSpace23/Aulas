@@ -23,8 +23,9 @@ body{
 
 #video-streams{
     display: flex;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 10 / 10;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     align-items: center;

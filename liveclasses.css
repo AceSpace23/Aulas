@@ -22,9 +22,8 @@ body{
 }
 
 #video-streams{
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    flex-wrap: wrap;
+    display: grid;
+    flex-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     height: 90vh;
     width: 1400px;

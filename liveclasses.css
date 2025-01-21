@@ -23,6 +23,7 @@ body{
 
 #video-streams{
     display: grid;
+    aspect-ratio: 1 / 1;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 10px;
     height: 90vh;
@@ -31,7 +32,6 @@ body{
 }
 
 .video-container{
-    aspect-ratio: 1 / 1;
     max-height: 100%;
     border: 3px solid rgb(250, 238, 238);
     background-color: #5f0e69;

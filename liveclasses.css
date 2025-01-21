@@ -27,8 +27,6 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
     height: 90vh;
     width: 1400px;
     margin:0 auto; 

@@ -22,10 +22,10 @@ body{
 }
 
 #video-streams{
-    display: grid;
+    display: flex;
     flex-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    height: 90vh;
+    height: 50vh;
     width: 1400px;
     margin:0 auto; 
 }

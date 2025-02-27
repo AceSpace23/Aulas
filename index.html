@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta charset='UTF-8'>
+     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Ace classes</title>
     <meta name='viewport' content='width=device-width,initial-scale=1'>
@@ -9,8 +9,11 @@
     <link rel="shortcut icon" type="imagex/png" href="images/logob.ico">
 </head>
 <body>
+    
+    <button id="join-btn">Join class</button>
 
-    <button id="join-btn">Join Class</button>
+    <div id="grid-container"  class="container"></div>
+        <div class="video-block"></div>
 
     <div id="stream-wrapper">
         <div id="video-streams"></div>
@@ -23,6 +26,7 @@
     </div>
      
 </body>
+<script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.22.2.js"></script>
 <script src='AgoraRTC_N-4.23.0.js'></script>
 <script src='liveclasses.js'></script>
 </html>

@@ -1,5 +1,5 @@
 const APP_ID = "33da08417b8944677b866bb33fbaf89f6"
-const TOKEN = "007eJxTYDidVNp6bt4LM/ZM7bhN3bP9GdR3aF6pVY1kNfTgaNz0P1KBwTgl0cDCxNA8ycLSxMTMHEibmSUlGRunJSWmWVimmel0cmU0BDIyrPmfxczIAIEgPjtDck5icXFqMQMDAATbHn0="
+const TOKEN = "007eJxTYDjB5/9e/uOauZ6mPkdPs0hcVlokfSe0rtelz+qsyMpy3mgFBuOURAMLE0PzJAtLExMzcyBtZpaUZGyclpSYZmGZZvbgOF9GQyAjw9JbNcyMDBAI4rMzJOckFhenFjMwAABRiR/m"
 const CHANNEL = "classes"
 
 const client = AgoraRTC.createClient({mode:'rtc',codec:'vp8'})
@@ -24,7 +24,7 @@ let joinAndDisplayLocalStream = async () => {
 
     localTracks[1].play(`user-${UID}`);
 
-    await client.publish([localTracks[0], localTracks[1]])
+    await client.publish([localTracks[0], localTracks[1]]);
 }
 
 let joinStream = async () => {
@@ -94,7 +94,7 @@ let toggleCamera = async (e) => {
     if(localTracks[1].muted){
         await localTracks[1].setMuted(false);
         e.target.innerText = 'Camera on';
-        e.target.style.backgroundColor = '46044D';
+        e.target.style.backgroundColor = '#46044D';
     }
     else{
         await localTracks[1].setMuted(true);

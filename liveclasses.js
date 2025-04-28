@@ -19,7 +19,7 @@ let joinAndDisplayLocalStream = async () => {
 
     let player = `<div class="video-container" id="user-container-${UID}">
                        <div class="video-player" id="user-${UID}"></div>
-                 </div>`
+                 </div>`;
     document.getElementById('video-streams').insertAdjacentHTML('beforeend', player);
 
     localTracks[1].play(`user-${UID}`);
@@ -34,6 +34,7 @@ let joinStream = async () => {
 }
 
 let handleUserJoined = async (user, mediaType) => {
+    if(document.getElementById(`user-container-${user.uid}`)) return;
     remoteUsers[user.uid] = user  
     await client.subscribe(user, mediaType);
 
@@ -43,9 +44,9 @@ let handleUserJoined = async (user, mediaType) => {
             player.remove();
         }
 
-        player = `<div class = "video-container" id= "user-container-${user.uid}">
+        player = `<div class = "video-container" id="user-container-${user.uid}">
                         <div class="video-player" id="user-${user.uid}"></div>
-                  </div>`
+                  </div>`;
         document.getElementById('video-streams').insertAdjacentHTML('beforeend', player);
         
         user.videoTrack.play(`user-${user.uid}`);
